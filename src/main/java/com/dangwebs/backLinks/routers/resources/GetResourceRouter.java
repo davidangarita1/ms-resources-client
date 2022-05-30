@@ -17,7 +17,7 @@ public class GetResourceRouter {
     @Bean
     public RouterFunction<ServerResponse> getResource(GetResourceUseCase useCase) {
         return route(
-                GET("resources/get/{id}").and(accept(MediaType.APPLICATION_JSON)),
+                GET("resources/{id}").and(accept(MediaType.APPLICATION_JSON)),
                 request -> ServerResponse.ok()
                         .contentType(MediaType.APPLICATION_JSON)
                         .body(BodyInserters.fromPublisher(useCase.apply(

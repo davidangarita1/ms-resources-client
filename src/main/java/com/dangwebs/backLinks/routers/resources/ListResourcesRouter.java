@@ -16,7 +16,7 @@ import static org.springframework.web.reactive.function.server.RouterFunctions.r
 public class ListResourcesRouter {
     @Bean
     public RouterFunction<ServerResponse> getAllResources(ListResourcesUseCase useCase) {
-        return route(GET("resources/getAll"),
+        return route(GET("resources"),
                 request -> ServerResponse.ok()
                         .contentType(MediaType.APPLICATION_JSON)
                         .body(BodyInserters.fromPublisher(useCase.get(), ResourceDTO.class))

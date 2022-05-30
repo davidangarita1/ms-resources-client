@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.Date;
 import java.util.List;
 
 @Data
@@ -20,5 +21,7 @@ public class Resource {
     private String description;
     private String url;
     private List<String> category;
-    private String date;
+    private Date date;
+    private String image;
+    private Boolean favorite;
 }

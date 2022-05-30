@@ -17,7 +17,7 @@ public class OwnerListResourcesRouter {
     @Bean
     public RouterFunction<ServerResponse> getOwnerAllResources(OwnerListResourcesUseCase useCase) {
         return route(
-                GET("resources/getOwnerAll/{userId}"),
+                GET("resources/owner/{userId}"),
                 request -> ServerResponse.ok()
                         .contentType(MediaType.APPLICATION_JSON)
                         .body(BodyInserters.fromPublisher(
