@@ -7,5 +7,4 @@ import reactor.core.publisher.Flux;
 
 @Repository
 public interface ResourceRepository extends ReactiveCrudRepository<Resource, String> {
-    Flux<Resource> findByUserId(String userId);
 }
