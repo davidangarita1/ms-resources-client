@@ -1,4 +1,4 @@
-# API Free Resources By DangWebs
+# API Free Resources By DangWebs (Beta)
 
 ## EndPoints
 
