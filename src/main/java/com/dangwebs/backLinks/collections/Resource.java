@@ -16,7 +16,6 @@ import java.util.List;
 public class Resource {
     @Id
     private String id;
-    private String userId;
     private String name;
     private String description;
     private String url;

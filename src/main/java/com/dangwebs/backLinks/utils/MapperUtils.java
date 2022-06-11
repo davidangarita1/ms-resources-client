@@ -11,7 +11,6 @@ public class MapperUtils {
     public Function<Resource, ResourceDTO> mapEntityToResourceDTO() {
         return entity -> new ResourceDTO(
                 entity.getId(),
-                entity.getUserId(),
                 entity.getName(),
                 entity.getDescription(),
                 entity.getUrl(),

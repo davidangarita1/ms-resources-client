@@ -15,8 +15,6 @@ import java.util.Objects;
 public class ResourceDTO {
     private String id;
     @NotBlank
-    private String userId;
-    @NotBlank
     private String name;
     private String description;
     @NotBlank
@@ -31,19 +29,18 @@ public class ResourceDTO {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ResourceDTO that = (ResourceDTO) o;
-        return Objects.equals(id, that.id) && Objects.equals(userId, that.userId) && Objects.equals(name, that.name) && Objects.equals(description, that.description) && Objects.equals(url, that.url) && Objects.equals(category, that.category) && Objects.equals(date, that.date) && Objects.equals(image, that.image) && Objects.equals(favorite, that.favorite);
+        return Objects.equals(id, that.id) && Objects.equals(name, that.name) && Objects.equals(description, that.description) && Objects.equals(url, that.url) && Objects.equals(category, that.category) && Objects.equals(date, that.date) && Objects.equals(image, that.image) && Objects.equals(favorite, that.favorite);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, userId, name, description, url, category, date, image, favorite);
+        return Objects.hash(id, name, description, url, category, date, image, favorite);
     }
 
     @Override
     public String toString() {
         return "ResourceDTO{" +
                 "id='" + id + '\'' +
-                ", userId='" + userId + '\'' +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 ", url='" + url + '\'' +
