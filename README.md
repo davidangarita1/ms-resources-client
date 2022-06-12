@@ -11,8 +11,3 @@ https://ms-resources-client.herokuapp.com/resources
 ```
 https://ms-resources-client.herokuapp.com/resources/${id}
 ```
-
-* Get By Owner
-```
-https://ms-resources-client.herokuapp.com/resources/owner/{userId}
-```
