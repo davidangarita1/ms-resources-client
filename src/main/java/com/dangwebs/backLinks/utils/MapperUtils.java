@@ -16,7 +16,6 @@ public class MapperUtils {
                 entity.getUrl(),
                 entity.getCategory(),
                 entity.getDate(),
-                entity.getImage(),
                 entity.getFavorite()
         );
     }

@@ -21,6 +21,5 @@ public class Resource {
     private String url;
     private List<String> category;
     private Date date;
-    private String image;
     private Boolean favorite;
 }
